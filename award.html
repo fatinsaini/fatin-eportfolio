@@ -1,0 +1,308 @@
+<doctype html>
+<html>
+<head>
+
+<style>
+* {
+font-family: Cambria Math;
+}
+
+{
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -130px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: rgba(0,0,0,0.8);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next {
+        font-size: 11px
+    }
+}
+</style>
+
+<title>IMS456 E-PORTFOLIO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+</head>
+
+<body bgcolor=#66DBDC>
+<table border=0 width=100%>
+<tr>
+<td colspan=2>
+	<header><img src=BannerWeb.png alt=Banner width=100%></header>
+</td>
+</tr>
+
+<tr>
+<td colspan=2>
+<nav align=center>
+  <a href=aboutme.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">HOME</a>
+
+  <a href=index.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">PERSONAL DETAILS</a> 
+
+  <a href=education.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">EDUCATION</a>
+
+  <a href="curriculum.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CURRICULUMS</a>
+
+  <a href="objexp.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">OBJECTIVE & EXPERIENCES</a>
+
+  <a href="skillang.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">LANGUAGE & SKILLS</a>
+
+  <a href="award.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">AWARDS</a>
+
+  <a href="contact.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CONTACT</a>
+
+  <a href="ref.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">REFERENCES</a>
+</nav>
+</td>
+</tr>
+
+<tr>
+    <td colspan=2>
+        <br>
+        <center><h1>AWARDS</h1></center>
+    </td>
+</tr>
+
+<tr>
+    <td colspan=2>
+        <article>
+        <br>
+            <center>
+                <div style="background-color:darkslategray;color:white;padding:20px;">
+                    <p>
+                        ➢ Dean Award (Semester 4 Diploma 2017) – PNGK 3.76
+                    </p>
+                    <p>
+                        ➢ Dean Award (Semester 2 Diploma 2016) – PNGK 3.80
+                    </p>
+                    <p>
+                        ➢ Co-Curriculum & Character Excellence Award 2016 (Student Award admirable)
+                    </p>
+                    <p>
+                        ➢ 5th place Jasin Vocational College Recital Competition 2016
+                    </p>
+                    <p>
+                        ➢ Leadership award of the hostel 2015/2016
+                    </p>
+                    <p>
+                        ➢ 6th place of team Bowling Competition between hostel exco – September 2015
+                    </p>
+                    <p>
+                        ➢ 4th place Quran and Azan Recital Competition Competition - November 2016
+                    </p>
+                    <p>
+                        ➢ Pass the Malaysian Vocational Certificate - Malay Language Testing 2015
+                    </p>
+                </div>
+                <br>
+            </center>
+        </article>
+    <br>
+    </td>
+</tr>
+
+<tr>
+    <td colspan=2 bgcolor=#24A6A1>
+        <footer align=center>
+            <p align style="color:white">
+                <sub>
+                    Copyright © 2020 | Fatin Haziqah Saini E-portfolio | IMS456<br>
+                    Recommended browser viewed through Chrome 8.7 or higher<br>
+                    This website is best viewed at screen resolution of 1366 x 768 pixels or higher<br>
+                    All Rights Reserved
+                </sub>
+            </p>
+        </footer>
+    </td>
+</tr>
+
+</table>
+</body>
+</html>

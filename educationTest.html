@@ -1,0 +1,347 @@
+<doctype html>
+<html>
+<head>
+
+<style>
+* {
+font-family: Cambria Math;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+
+<title>IMS456 E-PORTFOLIO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+</head>
+
+<body bgcolor=#66DBDC>
+<table border=2 width=100%>
+<tr>
+<td colspan=2>
+	<header><img src=BannerWeb.png alt=Banner width=100%></header>
+</td>
+</tr>
+
+<tr>
+<td colspan=2>
+<nav align=center class="topnav" id="myTopnav">
+  <a href=aboutme.html  class="active"
+    style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">HOME</a>
+
+  <a href=index.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">PERSONAL DETAILS</a> 
+
+  <a href=education.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">EDUCATION</a>
+
+  <a href="curriculum.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CURRICULUM</a>
+
+   <a href="objexp.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">OBJECTIVE & EXPERIENCE</a>
+
+   <a href="skillang.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">LANGUAGE & SKILLS</a>
+
+   <a href="award.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">AWARD</a>
+
+  <a href="contact.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CONTACT</a>
+
+  <a href="ref.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">REFERENCE</a>
+</nav>
+</td>
+</tr>
+
+<tr>
+<td colspan=2>
+<br>
+<center><h1>EDUCATION</h1>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border=2 align="center" cellpadding="6" celspacing="6">
+
+  <tr>
+    <td width=50% align="center">
+	<a href="DegreeUiTM.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\DegreeUiTM.jpg" width=15% height=8%/>
+	</a>
+    </td>
+    <td width=50% align="center">
+	<font size="5px"><b>Universiti Teknologi Mara</b></font><p>
+	<font size="3px">Information Science (Hons) Information System Management</h4><br>
+	<font size="3px">CGPA : 3.09</h4><br>
+	<font size="3px">Degree</h4>
+	<font size="3px">2019 - 2024</h4>
+    </td>
+  </tr>
+  <tr>
+    <td width=50% align="center">
+    	<font size="5px"><b>Kolej Vokasional Datuk Seri Abu Zahar Isnin</b></font><p>
+	<font size="3px">Database Management System & Web Application Technology</h4><br>
+	<font size="3px">CGPA : </h4><br>
+	<font size="3px">Diploma</h4>
+	<font size="3px">2016 - 2017</h4>
+    </td>
+    <td width=50% align="center">
+	<a href="DiplomaKV1.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\DiplomaKV1.jpg" width=30% height=10%/>
+	</a>
+	<a href="DiplomaKV2.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\DiplomaKV2.jpg" width=30% height=10%/>
+	</a>
+    </td>
+  </tr>
+  <tr>
+    <td width=50% align="center">
+    	<!--<a href="SijilKV.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\SijilKV.jpg" width=20% height=10%/>
+	</a>-->
+    </td>
+    <td width=50% align="center">
+	<font size="5px" color="black"><b>Kolej Vokasional Datuk Seri Abu Zahar Isnin</b></font><p>
+	<font size="3px" color="black">Database Management System & Web Application Technology</h4><br>
+	<font size="3px" color="black">CGPA : </h4><br>
+	<font size="3px" color="black">Certificate</h4>
+	<font size="3px" color="black">2014 - 2015</h4>
+    </td>
+  </tr>
+  <tr>
+    <td width=50% align="center">
+    	<font size="5px" color="black"><b>Sekolah Menengah Kebangsaan Bandar Sungai Buaya</b></font><p>
+	<font size="3px" color="black">1A 3B 4C</h4><br>
+	<font size="3px" color="black">Penilaian Menengah Rendah</h4>
+	<font size="3px" color="black">2011 - 2013</h4>
+    </td>
+    <td width=50% align="center">
+	<!--<a href="PMRSMK.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\PMRSMK.jpg" width=20% height=10%/>
+	</a>-->
+    </td>
+  </tr>
+  <tr>
+    <td width=50% align="center">
+    	<!--<a href="UPSRSK.jpg">
+	<img src="C:\Users\fhaziqah\Desktop\Task 1 HTML\UPSRSK.jpg" width=20% height=10%/>
+	</a>-->
+    </td>
+    <td width=50% align="center">
+	<font size="5px" color="black"><b>Sekolah Kebangsaan Bandar Sungai Buaya</b></font><p>
+	<font size="3px" color="black">2A 2B 1C</h4><br>
+	<font size="3px" color="black">Ujian Penilaian Sekolah Rendah</h4>
+	<font size="3px" color="black">2005 - 2010</h4>
+    </td>
+  </tr>
+
+</table>
+</td>
+</tr>
+
+<tr>
+<td colspan=2 bgcolor=#24A6A1>
+
+<footer align=center>
+<p align style="color:white">
+	<sub>Copyright © 2020 | Fatin Haziqah Saini E-portfolio | IMS456<br>
+	Recommended browser viewed through Chrome 8.7 or higher<br>
+	This website is best viewed at screen resolution of 1366 x 768 pixels or higher<br>
+	All Rights Reserved</sub>
+</p>
+</footer>
+</td>
+</tr>
+
+</table>
+</body>
+</html>
