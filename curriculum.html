@@ -1,0 +1,375 @@
+<doctype html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Cambria Math;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: magenta;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 20px;
+  border: medium solid #c61aff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #c61aff;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 20px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #c61aff transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+<title>IMS456 E-PORTFOLIO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body bgcolor=#66DBDC>
+<table border=0 width=100%>
+<tr>
+<td colspan=2>
+	<header><img src=BannerWeb.png alt=Banner width=100%></header>
+</td>
+</tr>
+
+<tr>
+<td colspan=2>
+<nav align=center>
+  <a href=aboutme.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">HOME</a>
+
+  <a href=index.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">PERSONAL DETAILS</a> 
+
+  <a href=education.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">EDUCATION</a>
+
+  <a href="curriculum.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CURRICULUMS</a>
+
+  <a href="objexp.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">OBJECTIVE & EXPERIENCES</a>
+
+  <a href="skillang.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">LANGUAGE & SKILLS</a>
+
+  <a href="award.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">AWARDS</a>
+
+  <a href="contact.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CONTACT</a>
+
+  <a href="ref.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">REFERENCES</a>
+</nav>
+</td>
+</tr>
+
+<tr>
+<td colspan=2>
+<br>
+<center><h1>CURRICULUMS</h1></center>
+</td>
+</tr>
+
+<tr>
+<td width=100%>
+<br>
+
+<article align=center>
+<br>
+<h1 style="background-color:#0066ff;color:black;"><font color="white">Social Responsibility</font></h1>
+<br>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2><font color="black">2017 / 2018</font></h2>
+      <p><font size="4px" color="black"><b>Hostel Secretary session 2017 / 2018</b></font></p>
+      <p><font size="4px" color="black">- Handles Ihya' Ramadhan program with orphans from Fatimah Al-Zahara Orphan Complex, Melaka</font></p>
+      <p><font size="4px" color="black">- Arrange the orientation week program for students in 1 session 2017 / 2018</font></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2><font color="black">2016 / 2017</font></h2>
+      <p><font size="4px" color="black"><b>Spiritual Exco session 2016 / 2017</b></font></p>
+      <p><font size="4px" color="black">- Handles the visit of the Prophet's artifacts at Masjid Al Azim, Melaka</font></p>
+      <p><font size="4px" color="black">- Handles spiritual activity once every 2 weeks</font></p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2><font color="black">2015 / 2016</font></h2>
+      <p><font size="4px" color="black"><b>Spiritual Exco session 2015 / 2016</b></font></p>
+      <p><font size="4px" color="black">- Managing zero immoral, zero-crime programs with JAIM involving all college students</font></p>
+      <p><font size="4px" color="black">- Handles spiritual activity once every 2 weeks</font></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2><font color="black">2014 / 2015</font></h2>
+      <p><font size="4px" color="black"><b>Discipline Exco session 2014 / 2015</b></font></p>
+      <p><font size="4px" color="black">- Ensure that all hostel regulations are complied with by all students</font></p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2><font color="black">2014 / 2015</font></h2>
+      <p><font size="4px" color="black"><b>School Prefects session 2014/2015</b></font></p>
+      <p><font size="4px" color="black">- Manage and ensure that the program is implemented smoothly</font></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2><font color="black">March 2014</font></h2>
+      <p><font size="4px" color="black"><b>Assistant Secretary of Puteri Islam session 2014/2015</b></font></p>
+      <p><font size="4px" color="black">- Manage and ensure the program is scheduled for all members of the Puteri Islam uniform unit</font></p>
+    </div>
+  </div>
+</div>
+</article>
+<br>
+</td>
+</tr>
+
+<tr>
+<td width=100%>
+<br>
+
+<article align=center>
+<br>
+<h1 style="background-color:#0066ff;color:black;"><font color="white">Sport</font></h1>
+<br>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2><font color="black">January 2015</font></h2>
+      <p><font size="4px" color="black">MSS Handball Championship Jasin area at SMK Simpang Bekoh</font></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2><font color="black">September 2014</font></h2>
+      <p><font size="4px" color="black">KAVOT Handball Championship Negeri Sembilan / Melaka Zone at Kolej Vokasional Dato' Lela Maharaja, Rembau, Melaka, Negeri Sembilan</font></p>
+    </div>
+  </div>
+</div>
+</article>
+<br>
+</td>
+</tr>
+
+<tr>
+    <td colspan=2 bgcolor=#24A6A1>
+        <footer align=center>
+            <p align style="color:white">
+                <sub>
+                    Copyright © 2020 | Fatin Haziqah Saini E-portfolio | IMS456<br>
+                    Recommended browser viewed through Chrome 8.7 or higher<br>
+                    This website is best viewed at screen resolution of 1366 x 768 pixels or higher<br>
+                    All Rights Reserved
+                </sub>
+            </p>
+        </footer>
+    </td>
+</tr>
+
+</table>
+</body>
+</html>

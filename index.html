@@ -1,0 +1,416 @@
+<doctype html>
+<html>
+<head>
+
+<style>
+    * {
+        font-family: Cambria Math;
+    }
+
+    {
+        box-sizing: border-box
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        margin-top: -130px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: rgba(0,0,0,0.8);
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .prev, .next {
+            font-size: 11px
+        }
+    }
+</style>
+
+<title>IMS456 E-PORTFOLIO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body bgcolor=#66DBDC>
+<table border=0 width=100%>
+<tr>
+    <td colspan=2>
+        <header><img src=BannerWeb.png alt=Banner width=100%></header>
+    </td>
+</tr>
+
+<tr>
+<td colspan=2>
+
+<nav align=center>
+<nav align=center>
+  <a href=aboutme.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">HOME</a>
+
+  <a href=index.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">PERSONAL DETAILS</a> 
+
+  <a href=education.html style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">EDUCATION</a>
+
+  <a href="curriculum.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CURRICULUMS</a>
+
+  <a href="objexp.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">OBJECTIVE & EXPERIENCES</a>
+
+  <a href="skillang.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">LANGUAGE & SKILLS</a>
+
+  <a href="award.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">AWARDS</a>
+
+  <a href="contact.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">CONTACT</a>
+
+  <a href="ref.html" style="background-color: #24A6A1; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #1E6765;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 1px;
+    cursor: pointer;">REFERENCES</a>
+</nav>
+    </td>
+</tr>
+
+
+<tr>
+    <td colspan=2>
+        <br>
+        <center>
+            <h1>PERSONAL DETAILS</h1>
+            <br>
+        </center>
+
+
+        <article align=center>
+            <p><font size="3px" color="black"><b>Name : Fatin Haziqah binti Saini</b></font></p>
+            <p><font size="3px" color="black"><b>Age : 22 years old</b></font></p>
+            <p><font size="3px" color="black"><b>Address : Rawang, Selangor</b></font></p>
+            <p><font size="3px" color="black"><b>Religion : Islam</b></font></p>
+            <p><font size="3px" color="black"><b>Nationality : Malaysian</b></font></p>
+            <p><font size="3px" color="black"><b>Date of birth : 10th June 1998</b></font></p>
+            <p><font size="3px" color="black"><b>Place of birth : Hospital Universiti Kebangsaan Malaysia</b></font></p>
+        </article>
+        <br>
+        <br>
+        <br>
+    </td>
+</tr>
+
+
+<tr>
+    <td width=50% align=center>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"><b>1 / 12</b></div>
+                <img src="Slide1.jpg" alt=Slide1 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>2 / 12</b></div>
+                <img src="Slide2.jpg" alt=Slide2 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>3 / 12</b></div>
+                <img src="Slide3.jpg" alt=Slide3 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>4 / 12</b></div>
+                <img src="Slide4.jpg" alt=Slide4 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>5 / 12</b></div>
+                <img src="Slide5.jpg" alt=Slide5 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>6 / 12</b></div>
+                <img src="Slide6.jpg" alt=Slide6 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>7 / 12</b></div>
+                <img src="Slide7.jpg" alt=Slide7 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>8 / 12</b></div>
+                <img src="Slide8.jpg" alt=Slide8 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>9 / 12</b></div>
+                <img src="Slide9.jpg" alt=Slide9 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>10 / 12</div>
+                <img src="Slide10.jpg" alt=Slide10 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>11 / 12</b></div>
+                <img src="Slide11.jpg" alt=Slide11 style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"><b>12 / 12</b></div>
+                <img src="Slide12.jpg" alt=Slide12 style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+        <br>
+    </td>
+
+
+    <td width=50% align=center>
+        <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg" loop>
+            <source type="audio/mp3" src="UiTM.mp3">
+            Sorry, your browser does not support HTML5 audio.
+        </audio>
+        <br>
+    </td>
+</tr>
+
+<tr>
+    <td colspan=2 bgcolor=#24A6A1>
+        <footer align=center>
+            <p align style="color:white">
+                <sub>
+                    Copyright © 2020 | Fatin Haziqah Saini E-portfolio | IMS456<br>
+                    Recommended browser viewed through Chrome 8.7 or higher<br>
+                    This website is best viewed at screen resolution of 1366 x 768 pixels or higher<br>
+                    All Rights Reserved
+                </sub>
+            </p>
+        </footer>
+    </td>
+</tr>
+
+</table>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
