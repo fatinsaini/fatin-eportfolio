@@ -1,4 +1,4 @@
 # fatin-eportfolio
 
-IMC402 - Foundation of Information Studies <br>
+IMS456 - Basic Web Design And Content Management <br>
 UiTM Puncak Perdana
